@@ -5,8 +5,8 @@
 #  | || | | \__ \ || (_| | | | 
 # |___|_| |_|___/\__\__,_|_|_| 
 #                              
-# by Christopher Ayo (2023) 
-# ------------------------------------------------------ 
+# by Stephan Raabe (2023) 
+# ----------------------------------------------------- 
 # Install Script for required packages
 # ------------------------------------------------------
 
@@ -21,23 +21,11 @@ echo "  | ||  _ \/ __| __/ _  | | | "
 echo "  | || | | \__ \ || (_| | | | "
 echo " |___|_| |_|___/\__\__,_|_|_| "
 echo "                              "
-echo "by Christopher Ayo (2023)"
+echo "by Stephan Raabe (2023)"
 echo "-------------------------------------"
 echo ""
 
 # ------------------------------------------------------
-# Check if yay is installed
-# ------------------------------------------------------
-if sudo pacman -Qs yay > /dev/null ; then
-    echo "yay is installed. You can proceed with the installation"
-else
-    echo "yay is not installed. Will be installed now!"
-    _installPackagesPacman "base-devel"
-    git clone https://aur.archlinux.org/yay-git.git ~/yay-git
-    cd ~/yay-git
-    makepkg -si
-    cd ~/dotfiles/
-c# -----------------------------------------------------
 # Check if yay is installed
 # ------------------------------------------------------
 if sudo pacman -Qs yay > /dev/null ; then
@@ -58,7 +46,7 @@ else
     echo "  | || | | \__ \ || (_| | | | "
     echo " |___|_| |_|___/\__\__,_|_|_| "
     echo "                              "
-    echo "by Christopher Ayo (2023)"
+    echo "by Stephan Raabe (2023)"
     echo "-------------------------------------"
     echo ""
 fi
@@ -88,20 +76,20 @@ echo "-> Install main packages"
 
 packagesPacman=(
     "pacman-contrib"
-    "alacritty" 
-    "xterm" 
+    "alacritty"
+    "xterm"
     "rofi" 
+    "chromium"
     "firefox" 
-    "chromium" 
     "nitrogen" 
     "dunst" 
     "starship"
-    "neovim" 
+    "neovim"
     "vim" 
     "mpv" 
     "freerdp" 
     "xfce4-power-manager" 
-    "thunar" 
+    "thunar"
     "ranger" 
     "mousepad" 
     "ttf-font-awesome" 
@@ -111,7 +99,6 @@ packagesPacman=(
     "figlet" 
     "vlc" 
     "exa" 
-    "git" 
     "python-pip" 
     "python-psutil" 
     "python-rich" 
@@ -132,7 +119,7 @@ packagesYay=(
     "trizen"
     "sddm-sugar-dark"
 );
-
+  
 # ------------------------------------------------------
 # Install required packages
 # ------------------------------------------------------
@@ -222,9 +209,8 @@ echo "-> Copy default wallpaper to .cache"
 cp ~/dotfiles/wallpapers/default.jpg ~/.cache/current_wallpaper.jpg
 echo "default wallpaper copied."
 
-#------------------------------------------------------
+# ------------------------------------------------------
 # DONE
 # ------------------------------------------------------
 clear
-echo "DONE!" 
-
+echo "DONE!"
