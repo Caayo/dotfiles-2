@@ -35,5 +35,6 @@ alias gcheck="git checkout"
 
 
 alias rnvim='v $HOME/dotfiles/neovim/init.vim'
+alias rbash='v $HOME/dotfiles/.bashrc'
 alias sbash='source $HOME/dotfiles/.bashrc'
 
