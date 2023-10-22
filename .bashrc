@@ -22,6 +22,7 @@ alias dot='cd $HOME/dotfiles'
 alias Qtile='startx'
 
 
+alias gi="git init"
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
@@ -30,4 +31,7 @@ alias gpl="git pull"
 alias gst="git stash"
 alias gsp="git stash; git pull"
 alias gcheck="git checkout"
+
+
+alias rnvim='v $HOME/dotfiles/neovim/init.vim'
 
