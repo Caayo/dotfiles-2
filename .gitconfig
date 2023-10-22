@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = caayo7@outlook.com
+	name = Caayo
+[credential]
+	helper = store
