@@ -75,7 +75,6 @@ echo ""
 echo "-> Install main packages"
 
 packagesPacman=(
-    "barrier"
     "pacman-contrib"
     "alacritty"
     "xterm"
