@@ -5,7 +5,7 @@
 #  | || | | \__ \ || (_| | | | 
 # |___|_| |_|___/\__\__,_|_|_| 
 #                              
-# by Christopher Ayo (2023) 
+# by Stephan Raabe (2023) 
 # ----------------------------------------------------- 
 # Install Script for required packages
 # ------------------------------------------------------
@@ -21,7 +21,7 @@ echo "  | ||  _ \/ __| __/ _  | | | "
 echo "  | || | | \__ \ || (_| | | | "
 echo " |___|_| |_|___/\__\__,_|_|_| "
 echo "                              "
-echo "by Christopher Ayo (2023)"
+echo "by Stephan Raabe (2023)"
 echo "-------------------------------------"
 echo ""
 
@@ -46,7 +46,7 @@ else
     echo "  | || | | \__ \ || (_| | | | "
     echo " |___|_| |_|___/\__\__,_|_|_| "
     echo "                              "
-    echo "by Christopher Ayo (2023)"
+    echo "by Stephan Raabe (2023)"
     echo "-------------------------------------"
     echo ""
 fi
@@ -76,20 +76,18 @@ echo "-> Install main packages"
 
 packagesPacman=(
     "pacman-contrib"
-    "alacritty"
-    "xterm"
+    "alacritty" 
     "rofi" 
-    "chromium"
+    "chromium" 
     "firefox" 
     "nitrogen" 
     "dunst" 
     "starship"
-    "neovim"
-    "vim" 
+    "neovim" 
     "mpv" 
     "freerdp" 
     "xfce4-power-manager" 
-    "thunar"
+    "thunar" 
     "ranger" 
     "mousepad" 
     "ttf-font-awesome" 
@@ -107,6 +105,7 @@ packagesPacman=(
     "pavucontrol" 
     "tumbler" 
     "xautolock" 
+    "xclip" 
     "blueman"
     "sddm"
     "papirus-icon-theme"
@@ -148,20 +147,20 @@ _installSymLink .bashrc ~/.bashrc ~/dotfiles/.bashrc ~/.bashrc
 # ------------------------------------------------------
 # Install sddm display manager
 # ------------------------------------------------------
-echo ""
-echo "-> Install sddm display manager"
-while true; do
-    read -p "Do you want to install the custom login promt? (Yy/Nn): " yn
-    case $yn in
-        [Yy]* )
-            sudo systemctl enable sddm.service
-        break;;
-        [Nn]* ) 
-            echo "sddm installation skipped."
-        break;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+#echo ""
+#echo "-> Install sddm display manager"
+#while true; do
+#    read -p "Do you want to install the custom login promt? (Yy/Nn): " yn
+#    case $yn in
+#        [Yy]* )
+#            sudo systemctl enable sddm.service
+#        break;;
+#        [Nn]* ) 
+#            echo "sddm installation skipped."
+#        break;;
+#        * ) echo "Please answer yes or no.";;
+#    esac
+#done
 
 # ------------------------------------------------------
 # Install wallpapers
@@ -213,4 +212,5 @@ echo "default wallpaper copied."
 # DONE
 # ------------------------------------------------------
 clear
-echo "DONE!"
+echo "DONE!" 
+echo "NEXT: Please continue with 2-install-qtile.sh"
