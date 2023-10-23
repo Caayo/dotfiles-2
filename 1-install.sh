@@ -5,7 +5,7 @@
 #  | || | | \__ \ || (_| | | | 
 # |___|_| |_|___/\__\__,_|_|_| 
 #                              
-# by Stephan Raabe (2023) 
+# by Christopher Ayo (2023) 
 # ----------------------------------------------------- 
 # Install Script for required packages
 # ------------------------------------------------------
@@ -21,7 +21,7 @@ echo "  | ||  _ \/ __| __/ _  | | | "
 echo "  | || | | \__ \ || (_| | | | "
 echo " |___|_| |_|___/\__\__,_|_|_| "
 echo "                              "
-echo "by Stephan Raabe (2023)"
+echo "by Christopher Ayo (2023)"
 echo "-------------------------------------"
 echo ""
 
@@ -46,7 +46,7 @@ else
     echo "  | || | | \__ \ || (_| | | | "
     echo " |___|_| |_|___/\__\__,_|_|_| "
     echo "                              "
-    echo "by Stephan Raabe (2023)"
+    echo "by Christopher Ayo (2023)"
     echo "-------------------------------------"
     echo ""
 fi
@@ -75,6 +75,7 @@ echo ""
 echo "-> Install main packages"
 
 packagesPacman=(
+    "barrier"
     "pacman-contrib"
     "alacritty"
     "xterm"
